@@ -1,0 +1,372 @@
+/* ---------------------- Home Page & Overall Style Code ---------------------- */
+    /* --- 
+
+    The style code below has a mix of code that only affects the Home page, and
+    some reusable parts that also affect the other two pages: "Contact Page" and "Thank You Page".
+
+    . --- */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+h1, h2, h3, p {
+    font-size: 14px;
+    color: black;
+}
+
+.header {
+    background-image: url("../img/header_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.logo {
+    max-width: 300px;
+    display: block;
+    margin: 40px auto 50px auto;
+    
+}
+
+.hide-mobile{
+    display: none;
+}
+
+
+.title h1{
+    margin: 50px auto;
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;   
+    padding-left: 20px;
+    padding-right: 20px;
+    
+
+}
+
+.sub-title h2 {
+    color: #88fea7;
+    margin: 50px auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight:100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btn {
+    height: 30px;
+    width: 270px;
+    background: #88fea7;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 7px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+.block-1 h2, .block-2 h2 {
+    color: black;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.block-1 img{
+    height: 260px;
+    margin: auto 60px; 
+}
+
+.block-1 img:hover{
+    transform: scale(1.3);
+}
+
+.block-2{
+    background-color: #d9e0e6;
+    padding: 50px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    background: rgba(0,0,0,.1);
+    border: 5px solid #88fea7;
+}
+
+.block-2 h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.block-2 p{
+    font-size: 20px;
+    font-weight: regular;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.units {
+    color: red;
+}
+
+.scroll{
+    width: 30px;
+    animation: move 1s infinite alternate;
+    display: block;
+    margin: 0 auto 0px auto;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer p{
+    margin:0 auto;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* ---------------------- End of Home Page & Overall Style Code ---------------------- */
+
+/* ---------------------- Responsive Style Code ---------------------- */
+@keyframes move {
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(20px);
+    }
+    
+}
+
+
+@media only screen and (max-width: 4000px){
+
+    .title h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .logo{
+        content: url("../img/horiz-logo.png");
+    }
+
+    .show-desktop{
+        display: block;
+        margin: 0 auto 5% auto;
+    }
+} 
+
+@media only screen and (max-width: 1200px){
+
+    .title h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+} 
+
+@media only screen and (max-width: 1024px){
+    
+    .hide-mobile{
+        display:none;
+    }
+
+} 
+
+@media only screen and (max-width: 850px){
+
+    .title h1{
+        margin: 40px auto;
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .sub-title h2 {
+        margin: 40px auto;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .logo{
+        content: url("../img/vertic-logo.png");
+
+    }
+
+} 
+
+@media only screen and (max-width: 768px){
+
+    .title h1{
+        margin: 35px auto;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .sub-title h2 {
+        margin: 40px auto;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .logo{
+        content: url("../img/vertic-logo.png");
+
+    }
+
+} 
+
+@media only screen and (max-width: 600px){
+
+    .title h1{
+        margin: 30px auto;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .logo{
+        max-width: 70px;
+        content: url("../img/key-logo.png");
+    }
+    
+} 
+
+/* ---------------------- End of Responsive Style Code ---------------------- */
+
+/* ---------------------- Contact Page ---------------------- */
+
+/* --- Subtitle --- */
+.contact-title h2 {
+    color: black;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* --- End of Subtitle --- */
+
+/* --- Form Style --- */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0 30px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana;
+    text-transform: uppercase;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .contact-form {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px 30%;
+    font-family: Verdana;
+    
+  }
+
+  .custom-select select{
+    font-family: Verdana;
+    font-size: 10px;
+    background-color: white;
+    color: #777;
+    
+  }
+
+  .select-items div, #country, #keychain {
+    height: 40px;
+    padding-left: 30px;
+  }
+
+
+  .custom-select {
+      
+  }
+
+/* --- End of Form Style --- */
+
+/* ---------------------- Enf of Contact Page ---------------------- */
+
+
+/* ---------------------- Thank You Page ---------------------- */
+  #position, #designer, #purpose{
+    font-style: normal;
+    font-weight: 200;
+    color: red;
+    text-transform: uppercase;
+  }
+
+  .details h2 {
+    color: black;
+    margin: 40px auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+  .details {
+    margin: auto 25%;
+}
+
+/* ---------------------- End of Thank you Page ---------------------- */
